@@ -29,16 +29,23 @@ div#main div#content {
   background-color: rgba(5,8,16, 0.7);
 }
 
-div#main div#content div.title {
+div#main div#content div.save {
   font-family: 'Open Sans', sans-serif;
-  font-size: 3rem;
+  font-size: 5rem;
   padding: 0.2em;
   text-align: center;
 }
 
-div#main div#content div.date {
+div#main div#content div.venue {
   font-family: 'Open Sans', sans-serif;
-  font-size: 5rem;
+  font-size: 2rem;
+  padding: 0.05em;
+  text-align: center;
+}
+
+div#main div#content div.address {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
   padding: 0.05em;
   text-align: center;
 }
