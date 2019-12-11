@@ -27,14 +27,48 @@ div#main {
 
 div#main div#content {
   background-color: rgba(5,8,16, 0.7);
+  padding-bottom: 2em; 
+  margin-bottom: 2rem
+}
+
+div#main div#content div.title {
+  font-family: 'cursive', sans-serif; 
+  font-size: 2.75rem;
+  font-style: italic;
+  padding: 0.2em;
+  text-align: center;
+}
+
+.bookends {
+  position: relative;
+  border-width: 5px;
+  border-color: hsl(0, 0%, 50%) transparent;
+  height: 11px;
+  border-style: double;
+  width: 80%;
 }
 
 div#main div#content div.save {
   font-family: 'Open Sans', sans-serif;
-  font-size: 5rem;
+  font-size: 2.5rem;
   padding: 0.2em;
   text-align: center;
 }
+
+div#main div#content div.date{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  padding: 0.05em;
+  text-align: center;
+}
+
+div#main div#content div.time {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+  padding: 0.05em;
+  text-align: center;
+  font-style: italic;
+}  
 
 div#main div#content div.venue {
   font-family: 'Open Sans', sans-serif;
@@ -45,7 +79,8 @@ div#main div#content div.venue {
 
 div#main div#content div.address {
   font-family: 'Open Sans', sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 0.05em;
   text-align: center;
+  font-style: italic;
 }
