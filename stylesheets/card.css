@@ -1,0 +1,75 @@
+:root {
+  --boxDimension: calc(20vw + 10vh);
+  --imgBoxWhoLrOffset: calc(50vw - var(--boxDimension) / 2);
+  --imgBoxSideLrOffset: calc(30vw - var(--boxDimension));
+  --imgBoxWhoTbOffset: calc(50vh - var(--boxDimension) / 1.2);
+  --imgBoxTbOffset: calc(50vh - var(--boxDimension) / 1.2);
+  --bgColor: #FFFFFF;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  :root {
+    --imgBoxWhoLrOffset: calc(70vw - var(--boxDimension) / 2);
+    --imgBoxSideLrOffset: calc(70vw - var(--boxDimension) / 2);
+    --imgBoxWhoTbOffset: calc(20vh - var(--boxDimension) / 2);
+    --imgBoxTbOffset: calc(50vh - var(--boxDimension) / 2);
+    --bgColor: beige;
+  }
+}
+
+html {
+  font-size: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #050810;
+  color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+div#main section {
+  height: 100vh;
+  width: 100vw;
+}
+
+div#main section#top-graphic {
+  background-color: var(--bgColor);
+}
+
+
+div#main section#top-graphic div.img-box {
+  width: var(--boxDimension);
+  height: var(--boxDimension);
+  position: absolute;
+}
+
+div#main section#top-graphic div.who {
+  background-color: #8180B2;
+  left: var(--imgBoxWhoLrOffset);
+  top: var(--imgBoxWhoTbOffset);
+  /*top: calc(50vw / 100vh + 0.08vh);*/
+  /*top: calc(3vw + 3vh);*/
+}
+
+div#main section#top-graphic div.where {
+  background-color: #565595;
+  right: var(--imgBoxSideLrOffset);
+  /*top: calc(30vh + 5vw);*/
+  bottom: var(--imgBoxTbOffset);
+}
+
+div#main section#top-graphic div.when {
+  background-color: #353377;
+  left: var(--imgBoxSideLrOffset);
+  /*bottom: calc(3vw + 3vh);*/
+  bottom: var(--imgBoxWhoTbOffset);
+}
+
+div#main section#second {
+  background-color: grey;
+}
