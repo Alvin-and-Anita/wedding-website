@@ -41,8 +41,59 @@ body {
   stroke: #BE5F4B;
   fill: transparent;
 
-  height: 300px;
+  height: 100px;
   width: 100%;
+}
+
+.svgArrow.svgArrowWho {
+  margin-top: -80%;
+  margin-left: -5%;
+}
+
+.svgArrow.svgArrowWhen {
+  margin-top: -30%;
+  margin-left: 22%;
+}
+
+.svgArrow.svgArrowWhere {
+  margin-top: -40%;
+  margin-left: -10%;
+}
+
+@media screen and (min-width: 480px) {
+  .svgArrow {
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .svgArrow {
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .svgArrow {
+    height: 250px;
+  }
+
+  .svgArrow.svgArrowWhen {
+    margin-top: -35%;
+  }
+
+  .svgArrow.svgArrowWhere {
+    margin-top: -30%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .svgArrow {
+    height: 300px;
+  }
+
+  .svgArrow.svgArrowWhen {
+    margin-top: -50%;
+  }
 }
 
 div#main section {
