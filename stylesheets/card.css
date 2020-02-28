@@ -36,49 +36,64 @@ body {
   padding: 0;
 }
 
-.arrow {
-	position: relative;
-  margin: 0 auto;
-  width: 100px;
+.svgArrow {
+  stroke-width: 1%;
+  stroke: #BE5F4B;
+  fill: transparent;
+
+  height: 100px;
+  width: 100%;
 }
 
-.arrow .curve {
-	border: 2px solid #BE5F4B;
-	border-color: transparent transparent transparent #BE5F4B;
-	height: 360px;
-	width: 1200px;
-	border-radius: 230px 0 0 150px;
+.svgArrow.svgArrowWho {
+  margin-top: -80%;
+  margin-left: -5%;
 }
 
-.arrow .point {
-	position: absolute;
-	left: 40px;
-	top: 315px;
+.svgArrow.svgArrowWhen {
+  margin-top: -30%;
+  margin-left: 22%;
 }
 
-.arrow .point:before, .arrow .point:after {
-	border: 1px solid #BE5F4B;
-	height: 25px;
-	content: "";
-	position: absolute;
+.svgArrow.svgArrowWhere {
+  margin-top: -40%;
+  margin-left: -10%;
 }
 
-.arrow .point:before {
-	top: -11px;
-	left: -11px;
-	transform:rotate(-74deg);
-	-webkit-transform:rotate(-74deg);
-  -moz-transform:rotate(-74deg);
-  -ms-transform: rotate(-74deg);
+@media screen and (min-width: 480px) {
+  .svgArrow {
+    height: 150px;
+  }
 }
 
-.arrow .point:after {
-  top: -20px;
-	left: 5px;
-	transform:rotate(12deg);
-	-webkit-transform: rotate(12deg);
-  -moz-transform:rotate(12deg);
-  -ms-transform: rotate(12deg);
+@media screen and (min-width: 768px) {
+  .svgArrow {
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .svgArrow {
+    height: 250px;
+  }
+
+  .svgArrow.svgArrowWhen {
+    margin-top: -35%;
+  }
+
+  .svgArrow.svgArrowWhere {
+    margin-top: -30%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .svgArrow {
+    height: 300px;
+  }
+
+  .svgArrow.svgArrowWhen {
+    margin-top: -50%;
+  }
 }
 
 div#main section {
