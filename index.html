@@ -3,25 +3,125 @@
   <head>
     <title>Alvin and Anita</title>
     <link href="stylesheets/main.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <meta charset="UTF-8">
     <meta name="description" content="The wedding reception of Alvin and Anita">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="javascript/fittext.js"></script>
   </head>
   <body>
-    <div id="main">
-      <div id="header"></div>
-      <div id="content">
-        <div class="title">Alvin & Anita's <br> Wedding Reception</div>
-        <hr class="bookends">
-        <div class="save">
-          SAVE THE DATE!
-          <div class="date">August 29<sup>th</sup>, 2020</div>
-          <div class="time">6:30 PM - 11:30 PM</div>
-          <div class="venue">Terrace on the Park</div>
-          <div class="address"> 52-11 111th St, Flushing, NY 11368</div>
+    <section>
+      <div id="landing-header">
+        <nav>
+          <ul>
+            <li>
+              <a href="#about-us">About Us</a>
+            </li>
+            <li>
+              <a href="#rsvp">RSVP</a>
+            </li>
+            <li>
+              <a href="#registry">Registry</a>
+            </li>
+          </ul>
+        </nav>
+        <h1>
+          Alvin and Anita
+        </h1>
+        <div class="full-vp-bg-image">
+          <picture>
+            <source type="image/webp" media="(max-width: 799px)" srcset="images/us/awkward-wall-800.webp">
+            <source type="image/jpeg" media="(max-width: 799px)" srcset="images/us/awkward-wall-800.jpg">
+            <source type="image/webp" media="(min-width: 800px)" srcset="images/us/awkward-wall.webp">
+            <source type="image/jpeg" media="(min-width: 800px)" srcset="images/us/awkward-wall.jpg">
+            <img src="images/us/awkward-wall.jpg" alt="Alvin and Anita, in front of wall, smiling awkwardly at camera.">
+          </picture>
         </div>
       </div>
-    </div>
+    </section>
+    <section>
+      <div id="about-us">
+        <h1>About Us</h1>
+        We are Alvin Khaled and Anita Chan, a couple in New York City chasing the dream of eco-friendly living.
+      </div>
+    </section>
+    <section>
+      <div id="rsvp">
+        <h1>Come to our Wedding Reception</h1>
+        <p>
+          Our wedding reception will be at Terrace on the Park in Queens, on Saturday, August 29th, 2020.
+        </p>
+        <p>
+          We would love to see you there.
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8X8FVLYsJyqajCfpjVSnN8Cq2pdoRmuT0VyhGVlFUkoa-fQ/viewform" target="_blank">
+            If you are able to attend, please click here to let us know so we can reserve a seat for you.
+          </a>
+        </p>
+      </div>
+    </section>
+    <section>
+      <div id="registry">
+        <h1>Gifts</h1>
+        <p>
+          We humbly request that you do not give us any tangible gifts.
+        </p>
+        <p>
+          We value minimalism and the pursuit of improving our world and all its communities. In lieu of gifts to us, we suggest and would be grateful if you can provide resources to or subscribe to the services of some of our favorite organizations, listed below.
+        </p>
+        <ul>
+          <li>
+            GrowNYC
+          </li>
+          <li>
+            Wikimedia
+          </li>
+          <li>
+            United Community Centers Inc.
+          </li>
+          <li>
+            Student Conservation Association
+          </li>
+          <li>
+            Arbor Day Foundation
+          </li>
+          <li>
+            The Nature Conservancy
+          </li>
+          <li>
+            Dixon Hall Neighborhood Services
+          </li>
+          <li>
+            Oxfam
+          </li>
+          <li>
+            Free Software Foundation
+          </li>
+          <li>
+            National Parks Foundation
+          </li>
+          <li>
+            Consumer Reports
+          </li>
+          <li>
+            Catalog Choice
+          </li>
+          <li>
+            Rocky Mountain Institute
+          </li>
+          <li>
+            National Park Service
+          </li>
+          <li>
+            Charity Navigator
+          </li>
+          <li>
+            New York Times
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div id="footer"></div>
+    <script>
+      window.fitText(document.getElementById("responsive_headline"));
+    </script>
   </body>
 </html>
