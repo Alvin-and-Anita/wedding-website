@@ -106,7 +106,3 @@ div#main section#top-graphic div.when {
   bottom: var(--imgBoxTbOffset);
   right: var(--imgBoxSideLrOffset);
 }
-
-div#main section#second {
-  background-color: grey;
-}
