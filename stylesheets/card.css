@@ -36,64 +36,33 @@ body {
   padding: 0;
 }
 
+.img-box-text {
+  position: absolute;
+}
+
 .svgArrow {
   stroke-width: 1%;
   stroke: #BE5F4B;
   fill: transparent;
 
-  height: 100px;
+  height: 100%;
   width: 100%;
+  position: absolute;
 }
 
 .svgArrow.svgArrowWho {
-  margin-top: -80%;
+  margin-top: -58%;
   margin-left: -5%;
 }
 
 .svgArrow.svgArrowWhen {
-  margin-top: -30%;
-  margin-left: 22%;
+  margin-top: -27%;
+  margin-left: 20%;
 }
 
 .svgArrow.svgArrowWhere {
-  margin-top: -40%;
+  margin-top: -15%;
   margin-left: -10%;
-}
-
-@media screen and (min-width: 480px) {
-  .svgArrow {
-    height: 150px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .svgArrow {
-    height: 200px;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .svgArrow {
-    height: 250px;
-  }
-
-  .svgArrow.svgArrowWhen {
-    margin-top: -35%;
-  }
-
-  .svgArrow.svgArrowWhere {
-    margin-top: -30%;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .svgArrow {
-    height: 300px;
-  }
-
-  .svgArrow.svgArrowWhen {
-    margin-top: -50%;
-  }
 }
 
 div#main section {
