@@ -1,154 +1,112 @@
-html {
-  font-size: 100%;
-  height: 100%;
-}
-
 body {
-  background-color: #050810;
-  background-image: url("../images/background.jpg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  color: #FFFFFF;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  height: 100%;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 20px;
   margin: 0;
   padding: 0;
 }
 
-div#main {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: space-between;
+a {
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: dotted underline;
 }
 
-div#main div#content {
-  background-color: rgba(5,8,16, 0.7);
-  padding-bottom: 2em;
-  margin-bottom: 2rem;
-
-  padding-top: 30px;
-  height: 300px;
-  width: 300px;
+h1 {
+  --minFontSize: 30px;
+  --maxFontSize: 120px;
+  --scaler: 2vw;
+  font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
 }
 
-div#main div#content div.title {
-  font-family: 'Open Sans', sans-serif; 
-  font-size: 1.3rem;
-  font-style: italic;
-  padding: 0.2em;
-  text-align: center;
+section > div {
+  box-sizing: border-box;
+  padding: 20px;
 }
 
-.bookends {
-  position: relative;
-  border-width: 5px;
-  border-color: hsl(0, 0%, 50%) transparent;
-  height: 11px;
-  border-style: double;
-  width: 80%;
+div#landing-header {
+  padding: 0 !important;
 }
 
-div#main div#content div.save {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
-  padding: 0.05em;
-  text-align: center;
+div#landing-header h1 {
+  --minFontSize: 32px;
+  --maxFontSize: 200px;
+  font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
+  filter: drop-shadow(.02em .02em #FFFFFF);
+  margin: 0;
+  position: absolute;
+  text-align: right;
 }
 
-div#main div#content div.date{
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
-  padding: 0.05em;
-  text-align: center;
+#landing-header nav ul {
+  font-weight: 600;
+  line-height: 150%;
+  list-style: none;
+  --minFontSize: 20px;
+  --maxFontSize: 120px;
+  --scaler: 2vw;
+  font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
 }
 
-div#main div#content div.time {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 0.75rem;
-  padding: 0.05em;
-  text-align: center;
-  font-style: italic;
-}  
-
-div#main div#content div.venue {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
-  padding: 0.05em;
-  text-align: center;
-}
-
-div#main div#content div.address {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 0.75rem;
-  padding: 0.05em;
-  text-align: center;
-  font-style: italic;
-}
-
-@media screen and (min-width: 480px) {
-  div#main div#content {
-    padding-top: 50px;
-    height: 400px;
-    width: 450px;
+@media (min-width: 800px) {
+  div#landing-header {
+    min-height: 100vh;
+    z-index: 1;
+    font-size:100px;
   }
 
-  div#main div#content div.title {
-    font-size: 2.1rem;
+  #landing-header nav a {
+    filter: drop-shadow(.05em .05em #FFFFFF);
   }
 
-  div#main div#content div.save {
-    font-size: 1.8rem;
+  div.full-vp-bg-image {
+    box-sizing: border-box;
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: -1;
   }
 
-  div#main div#content div.date {
-    font-size: 1.5rem;
+  div.full-vp-bg-image img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    width: 100%;
   }
 
-  div#main div#content div.time {
-    font-size: 1.2rem;
-  }
-
-  div#main div#content div.venue {
-    font-size: 1.5rem;
-  }
-
-  div#main div#content div.address {
-    font-size: 1.2rem;
+  div#landing-header h1 {
+    max-width: 50vw;
+    right: 3vw;
+    --scaler: 8vw;
+    top: 2vh;
   }
 }
 
-@media screen and (min-width: 768px) {
-  div#main div#content {
-    padding-top: 50px;
-    height: 450px;
-    width: 500px;
+@media (max-width: 799px) {
+  #landing-header nav {
+    position: absolute;
   }
 
-  div#main div#content div.title {
-    font-size: 2.75rem;
+  div.full-vp-bg-image {
+    box-sizing: border-box;
+    left: 0px;
+    position: relative;
+    top: 0px;
+    width: 100%;
+    z-index: -1;
   }
 
-  div#main div#content div.save {
-    font-size: 2.5rem;
+  div.full-vp-bg-image img {
+    object-fit: cover;
+    object-position: center top;
+    width: 100%;
   }
 
-  div#main div#content div.date {
-    font-size: 2rem;
-  }
-
-  div#main div#content div.time {
-    font-size: 1.5rem;
-  }
-
-  div#main div#content div.venue {
-    font-size: 2rem;
-  }
-
-  div#main div#content div.address {
-    font-size: 1.5rem;
+  div#landing-header h1 {
+    right: 10px;
+    top: 20px;
+    position: absolute;
+    --scaler: 6vw;
   }
 }
