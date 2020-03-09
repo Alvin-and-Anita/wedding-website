@@ -9,6 +9,7 @@ body {
 a {
   color: rgba(0, 0, 0, 0.8);
   text-decoration: dotted underline;
+  text-decoration-skip-ink: none; /* https://stackoverflow.com/questions/50007283/dotted-underlines-dont-render-properly-in-chrome */
 }
 
 section > div {
