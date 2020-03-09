@@ -1,7 +1,7 @@
 body {
   color: rgba(0, 0, 0, 0.8);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   margin: 0;
   padding: 0;
 }
@@ -9,13 +9,6 @@ body {
 a {
   color: rgba(0, 0, 0, 0.8);
   text-decoration: dotted underline;
-}
-
-h1 {
-  --minFontSize: 30px;
-  --maxFontSize: 120px;
-  --scaler: 2vw;
-  font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
 }
 
 section > div {
@@ -28,9 +21,6 @@ div#landing-header {
 }
 
 div#landing-header h1 {
-  --minFontSize: 32px;
-  --maxFontSize: 200px;
-  font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
   filter: drop-shadow(.02em .02em #FFFFFF);
   margin: 0;
   position: absolute;
@@ -40,10 +30,6 @@ div#landing-header h1 {
 div.menu nav ul {
   font-weight: 600;
   list-style: none;
-  --minFontSize: 20px;
-  --maxFontSize: 120px;
-  --scaler: 4vw;
-  font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
   padding-left: 0;
 }
 
@@ -64,6 +50,7 @@ div.menu nav ul li {
   }
 
   div.menu nav ul {
+    font-size: 4vmax;
     line-height: 150%;
   }
 
@@ -89,9 +76,9 @@ div.menu nav ul li {
   }
 
   div#landing-header h1 {
+    font-size: 8vmax;
     max-width: 50vw;
     right: 3vw;
-    --scaler: 8vw;
     top: 2vh;
   }
 }
@@ -105,14 +92,13 @@ div.menu nav ul li {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    font-size: 5vmin;
     justify-content: space-around;
+    margin: 10px 0 0 0;
   }
 
   div.menu nav ul li {
     text-align: center;
-    /*
-    padding: 0 25px;
-    */
   }
 
   div.full-vp-bg-image {
@@ -131,10 +117,10 @@ div.menu nav ul li {
   }
 
   div#landing-header h1 {
+    font-size: 8vmin;
     max-width: 50vw;
     right: 3vw;
     top: 20px;
     position: absolute;
-    --scaler: 6vw;
   }
 }
