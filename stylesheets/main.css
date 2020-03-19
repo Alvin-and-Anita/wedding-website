@@ -12,6 +12,10 @@ a {
   text-decoration-skip-ink: none; /* https://stackoverflow.com/questions/50007283/dotted-underlines-dont-render-properly-in-chrome */
 }
 
+div.sections {
+  background-color: white;
+}
+
 section > div {
   box-sizing: border-box;
   padding: 20px;
@@ -60,7 +64,7 @@ div.menu nav ul {
     box-sizing: border-box;
     height: 100%;
     left: 0px;
-    position: absolute;
+    position: fixed;
     top: 0px;
     width: 100%;
     z-index: -1;
