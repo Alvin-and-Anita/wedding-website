@@ -1,15 +1,13 @@
-#container {
-  width: 2000px;
+.slideshow-container {
+  width: 100%;
   overflow: hidden;
-  margin: 50px auto;
-  margin-bottom: 0px;
+  margin: 30px 0 20px 0;
   background: white;
 }
 
 .photobanner {
-  height: 150px;
+  height: 200px;
   width: 3050px;
-  margin-bottom: 50px;
   font-size:0px;
 }
 
