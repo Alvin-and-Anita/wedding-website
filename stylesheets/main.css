@@ -107,8 +107,8 @@ div.menu nav ul {
   /* https://stackoverflow.com/questions/23581161/how-to-control-the-anchor-landing-position */
   div.sections a.anchor {
     display: block;
-    padding-top: 30px;
-    margin-top: -30px;
+    padding-top: 40px;
+    margin-top: -40px;
   }
 
   div.menu nav ul {
@@ -148,5 +148,14 @@ div.menu nav ul {
 
   div.sections {
     z-index: 0; /* menu above sections */
+  }
+}
+
+@media (max-width: 400px) {
+  /* https://stackoverflow.com/questions/23581161/how-to-control-the-anchor-landing-position */
+  div.sections a.anchor {
+    display: block;
+    padding-top: 10px;
+    margin-top: -10px;
   }
 }
