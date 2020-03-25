@@ -12,6 +12,10 @@ a {
   text-decoration-skip-ink: none; /* https://stackoverflow.com/questions/50007283/dotted-underlines-dont-render-properly-in-chrome */
 }
 
+div.sections {
+  background-color: white;
+}
+
 section > div {
   box-sizing: border-box;
   padding: 20px;
@@ -32,6 +36,10 @@ div.menu nav ul {
   font-weight: 600;
   list-style: none;
   padding-left: 0;
+
+  /* removes default ul margins */
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 @media (min-width: 800px) {
@@ -82,8 +90,25 @@ div.menu nav ul {
 }
 
 @media (max-width: 799px) {
+  div.menu {
+    position: sticky;
+    top: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+
+    z-index: 1; /* menu above sections */
+  }
+
   div.menu nav {
     width: 100%;
+  }
+
+  /* https://stackoverflow.com/questions/23581161/how-to-control-the-anchor-landing-position */
+  div.sections a.anchor {
+    display: block;
+    padding-top: 30px;
+    margin-top: -30px;
   }
 
   div.menu nav ul {
@@ -92,7 +117,6 @@ div.menu nav ul {
     flex-wrap: wrap;
     font-size: 5vmin;
     justify-content: space-around;
-    margin: 10px 0 0 0;
   }
 
   div.menu nav ul li {
@@ -120,5 +144,9 @@ div.menu nav ul {
     right: 3vw;
     top: 20px;
     position: absolute;
+  }
+
+  div.sections {
+    z-index: 0; /* menu above sections */
   }
 }
